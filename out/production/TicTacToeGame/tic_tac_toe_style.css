@@ -1,0 +1,13 @@
+#board {
+	-fx-background-color: black;
+    -fx-background-insets: 0, 0 0 0 0 ;
+    -fx-padding: 1.5 ;
+    -fx-vgap: 2;
+    -fx-hgap: 2;
+}
+.button {
+	-fx-font: 20px "Comic Sans";
+}
+.label {
+	-fx-font: 30px "Comic Sans";
+}

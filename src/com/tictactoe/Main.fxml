@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tictactoe.MainController">
+    <top>
+        <HBox>
+            <Button text="Reset" alignment="center" onAction="#resetBoard"/>
+            <Button text="Bot Mode" alignment="center" onAction="#botMode"/>
+            <Button text="2-Player Mode" alignment="center" onAction="#manualMode"/>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox alignment="center">
+            <HBox alignment="center">
+                <GridPane id="board" fx:id="gridPane" alignment="center"/>
+            </HBox>
+            <HBox alignment="center">
+                <Label fx:id="turnLabel"/>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>
